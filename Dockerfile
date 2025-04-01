@@ -1,6 +1,6 @@
-FROM alpine:3.20.2
+FROM alpine:3.21.3
 
-RUN apk add --no-cache aws-cli postgresql16-client curl && rm -rf /var/cache/apk/*
+RUN apk add --no-cache aws-cli postgresql17-client curl && rm -rf /var/cache/apk/*
 
 RUN mkdir /opt/backup
 
